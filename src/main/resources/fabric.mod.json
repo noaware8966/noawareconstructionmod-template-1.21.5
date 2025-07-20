@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "noawareconstructionmod",
+	"version": "${version}",
+	"name": "NoawareConstructionMod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Noaware"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/noawareconstructionmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.noaware.noawareconstructionmod.NoawareConstructionMod"
+		],
+		"fabric-datagen": [
+			"net.noaware.noawareconstructionmod.NoawareConstructionModDataGenerator"
+		],
+		"client": [
+			"net.noaware.noawareconstructionmod.NoawareConstructionModClient"
+		]
+	},
+	"mixins": [
+		"noawareconstructionmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
